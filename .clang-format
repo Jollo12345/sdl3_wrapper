@@ -30,16 +30,20 @@ EmptyLineBeforeAccessModifier: LogicalBlock
 FixNamespaceComments: false
 IncludeBlocks: Regroup
 IncludeCategories:
-  - Regex: ^<Q.*
+  - Regex: ^<SDL.*
     Priority: 1
     SortPriority: 0
     CaseSensitive: true
-  - Regex: ^<.*
+  - Regex: ^<spdlog.*
     Priority: 1
     SortPriority: 1
     CaseSensitive: true
+  - Regex: ^<.*
+    Priority: 1
+    SortPriority: 2
+    CaseSensitive: true
   - Regex: ^".*
-    Priority: 2
+    Priority: 3
     CaseSensitive: true
 IndentCaseLabels: false
 IndentPPDirectives: None
@@ -68,4 +72,3 @@ SpacesInContainerLiterals: false
 SpacesInParentheses: false
 SpacesInSquareBrackets: false
 UseTab: Never
-...

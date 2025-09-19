@@ -1,8 +1,0 @@
-@PACKAGE_INIT@
-
-# Ensure glm is available for downstream projects
-find_package(glm 1.0.1 REQUIRED)
-find_package(SDL3 3.2.20 REQUIRED)
-find_package(spdlog 1.15.3 REQUIRED)
-
-include("${CMAKE_CURRENT_LIST_DIR}/sdl3_wrapperTargets.cmake")
